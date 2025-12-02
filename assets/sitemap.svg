@@ -1,0 +1,49 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='420' viewBox='0 0 800 420' role='img' aria-label='Site map for Taniti Tourism'>
+  <style>
+    text { font: 14px sans-serif; }
+    .node { fill: #ffffff; stroke: #444; rx: 8; ry: 8; }
+    .root { fill: #f2f2f2; }
+    line { stroke: #999; stroke-width: 2; }
+  </style>
+  <rect class='node root' x='320' y='20' width='160' height='48'/>
+  <text x='400' y='50' text-anchor='middle'>Home</text>
+
+  <line x1='400' y1='68' x2='150' y2='140'/>
+  <line x1='400' y1='68' x2='400' y2='140'/>
+  <line x1='400' y1='68' x2='650' y2='140'/>
+
+  <rect class='node' x='70' y='140' width='160' height='48'/>
+  <text x='150' y='170' text-anchor='middle'>Explore Attractions</text>
+
+  <rect class='node' x='320' y='140' width='160' height='48'/>
+  <text x='400' y='170' text-anchor='middle'>Plan Your Trip</text>
+
+  <rect class='node' x='570' y='140' width='160' height='48'/>
+  <text x='650' y='170' text-anchor='middle'>Getting Around</text>
+
+  <line x1='150' y1='188' x2='100' y2='260'/>
+  <line x1='150' y1='188' x2='200' y2='260'/>
+
+  <rect class='node' x='40' y='260' width='120' height='48'/>
+  <text x='100' y='290' text-anchor='middle'>Beaches</text>
+
+  <rect class='node' x='190' y='260' width='120' height='48'/>
+  <text x='250' y='290' text-anchor='middle'>Rainforest & Volcano</text>
+
+  <line x1='400' y1='188' x2='300' y2='260'/>
+  <line x1='400' y1='188' x2='400' y2='260'/>
+  <line x1='400' y1='188' x2='500' y2='260'/>
+
+  <rect class='node' x='260' y='260' width='120' height='48'/>
+  <text x='320' y='290' text-anchor='middle'>Stay</text>
+
+  <rect class='node' x='380' y='260' width='120' height='48'/>
+  <text x='440' y='290' text-anchor='middle'>Dining</text>
+
+  <rect class='node' x='500' y='260' width='120' height='48'/>
+  <text x='560' y='290' text-anchor='middle'>FAQs & Safety</text>
+
+  <line x1='650' y1='188' x2='650' y2='260'/>
+  <rect class='node' x='590' y='260' width='120' height='48'/>
+  <text x='650' y='290' text-anchor='middle'>Buses, Taxis, Rentals</text>
+</svg>

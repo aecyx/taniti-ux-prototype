@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visit Taniti — Prototype</title>
+  <style>
+    :root { --bg:#ffffff; --fg:#1a1a1a; --muted:#5d5d5d; --brand:#0a7; --brand2:#095; --card:#f6f7f8; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e5e5;z-index:10}
+    .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+    .top{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:800;color:var(--brand);letter-spacing:.4px}
+    nav a{color:#222;text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a.active, .cta{background:var(--brand);color:#fff}
+    .cta{padding:8px 12px}
+    main section{display:none;padding:20px 0}
+    main section.active{display:block}
+    h1,h2{line-height:1.2;margin:.2em 0}
+    p{color:var(--muted)}
+    .hero{display:grid;gap:16px;grid-template-columns:1.4fr 1fr;align-items:center;padding:24px 0}
+    .hero .panel{background:var(--card);padding:16px;border:1px solid #e8e8e8;border-radius:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid #e8e8e8;border-radius:10px;padding:14px}
+    .pill{display:inline-block;padding:2px 8px;border-radius:99px;background:#e8fbf2;color:#0a6}
+    details{background:var(--card);border:1px solid #e8e8e8;border-radius:10px;padding:10px}
+    .kicker{font-size:12px;color:#0a6;text-transform:uppercase;letter-spacing:.08em}
+    footer{border-top:1px solid #e5e5e5;padding:16px 0;color:#666}
+    .filters{display:flex;gap:8px;flex-wrap:wrap}
+    .list li{margin:6px 0}
+    @media(max-width:760px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">Visit Taniti</div>
+      <nav id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#stay">Stay</a>
+        <a href="#dining">Dining</a>
+        <a href="#transport">Getting Around</a>
+        <a href="#plan" class="cta">Plan Trip</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="active">
+      <div class="hero">
+        <div>
+          <div class="kicker">Welcome</div>
+          <h1>Beaches, Rainforest, and Volcano Adventures</h1>
+          <p>Plan an unforgettable trip to the Pacific island of Taniti — explore white‑sand beaches, lush rainforest hikes, and our active volcano.</p>
+          <p><a class="cta" href="#plan">Plan Your Trip</a></p>
+        </div>
+        <div class="panel">
+          <strong>Quick Facts</strong>
+          <ul class="list">
+            <li>Public buses in Taniti City run 5 a.m. – 11 p.m.</li>
+            <li>Taxis, rental cars, and bikes with helmets available.</li>
+            <li>Currency: USD preferred; many accept euros/yen; major cards.</li>
+            <li>Power outlets: 120V (U.S. standard).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Top 5 Things To Do</h2>
+      <div class="grid" id="top5">
+        <div class="card">Relax on Yellow Leaf Bay beaches</div>
+        <div class="card">Rainforest zip‑lining adventure</div>
+        <div class="card">Visit the active volcano lookout</div>
+        <div class="card">Chartered fishing/snorkeling tours</div>
+        <div class="card">Local history museum & galleries</div>
+      </div>
+
+      <div class="panel" style="margin-top:16px">
+        <strong>Getting Around Today</strong>
+        <p>See options and hours in <a href="#transport">Getting Around</a>.</p>
+      </div>
+    </section>
+
+    <section id="explore">
+      <h1>Explore Attractions</h1>
+      <p>Filter by interest and tap a card for details and booking links.</p>
+      <div class="filters">
+        <label><input type="checkbox" name="filter" value="adventure" checked/> Adventure</label>
+        <label><input type="checkbox" name="filter" value="family" checked/> Family</label>
+        <label><input type="checkbox" name="filter" value="culture" checked/> Culture</label>
+        <label><input type="checkbox" name="filter" value="relax" checked/> Relax</label>
+      </div>
+      <div class="grid" id="cards"></div>
+    </section>
+
+    <section id="stay">
+      <h1>Stay</h1>
+      <p>From hostels and family‑owned hotels to a four‑star resort, all lodging is government‑regulated and regularly inspected.</p>
+      <div class="grid">
+        <div class="card"><strong>Resort</strong><br/><span class="pill">Beachfront</span><br/> <a href="#plan">Check availability</a></div>
+        <div class="card"><strong>Hotels</strong><br/> Family‑owned options across Taniti City. <a href="#plan">Find providers</a></div>
+        <div class="card"><strong>Bed & Breakfasts</strong><br/> Charming, local hospitality. <a href="#plan">Find providers</a></div>
+        <div class="card"><strong>Hostel</strong><br/> Budget‑friendly stays. <a href="#plan">Find providers</a></div>
+      </div>
+    </section>
+
+    <section id="dining">
+      <h1>Dining</h1>
+      <p>10 restaurants: local fish & rice (5), American‑style (3), Pan‑Asian (2). Many venues near Merriton Landing.</p>
+      <ul class="list">
+        <li>Local: Catch‑of‑the‑day with island rice</li>
+        <li>American‑style: Burgers, salads, breakfast</li>
+        <li>Pan‑Asian: Noodles, curries, stir‑fries</li>
+      </ul>
+    </section>
+
+    <section id="transport">
+      <h1>Getting Around</h1>
+      <div class="grid">
+        <div class="card">
+          <strong>Public buses</strong>
+          <p>Taniti City buses run <strong>5 a.m. – 11 p.m.</strong> daily. Private buses serve the rest of the island.</p>
+        </div>
+        <div class="card"><strong>Taxis</strong><p>Available in Taniti City.</p></div>
+        <div class="card"><strong>Rental cars</strong><p>Rent near the airport.</p></div>
+        <div class="card"><strong>Bikes</strong><p>Rentals available; <strong>helmets required by law</strong>.</p></div>
+        <div class="card"><strong>Walkable</strong><p>Taniti City and Merriton Landing are easy to explore on foot.</p></div>
+      </div>
+    </section>
+
+    <section id="plan">
+      <h1>Plan Your Trip</h1>
+      <div class="grid">
+        <div class="card">
+          <strong>Arriving</strong>
+          <p>Most visitors arrive by air. The airport currently supports small jets and prop planes and is expanding.</p>
+        </div>
+        <div class="card">
+          <strong>Money & Payments</strong>
+          <p>Currency: USD; many accept euros and yen; major credit cards widely accepted. Banks offer currency exchange.</p>
+        </div>
+        <div class="card">
+          <strong>Health & Safety</strong>
+          <p>One hospital and several clinics; many multilingual staff. Violent crime is rare; use standard precautions.</p>
+        </div>
+      </div>
+
+      <h2>FAQs</h2>
+      <details><summary>What are alcohol sales hours?</summary>
+        Alcohol may not be served or sold between <strong>12:00 a.m. and 9:00 a.m.</strong>
+      </details>
+      <details><summary>What is the drinking age?</summary>
+        The drinking age is <strong>18</strong> and is not strictly enforced.
+      </details>
+      <details><summary>Will my electronics work?</summary>
+        Power outlets are <strong>120V (U.S. standard)</strong>.
+      </details>
+      <details><summary>Are places open on holidays?</summary>
+        Taniti observes many holidays; some attractions/restaurants may be closed. Plan accordingly.
+      </details>
+      <details><summary>Is English spoken?</summary>
+        Many younger Tanitians speak fluent English; less common in rural areas and with older residents.
+      </details>
+
+      <p><em>Booking</em>: This official site links to vetted providers for lodging and activities.</p>
+      <p><a class="cta" href="#explore">Browse activities</a> <a class="cta" href="#stay" style="margin-left:8px">Find lodging</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Official Tourism of Taniti • © Taniti Government</div>
+  </footer>
+
+  <script>
+    // Client-side router (hash-based)
+    const sections=[...document.querySelectorAll('main section')];
+    const navLinks=[...document.querySelectorAll('nav a')];
+    function show(hash){
+      const id=(hash||'#home').replace('#','');
+      sections.forEach(s=>s.classList.toggle('active',s.id===id));
+      navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${id}`));
+      if(id==='explore' && !document.getElementById('cards').dataset.ready){buildCards();}
+    }
+    window.addEventListener('hashchange',()=>show(location.hash));
+    show(location.hash);
+
+    // Explore: simple filterable cards
+    const DATA=[
+      {t:'Zip‑lining in rainforest',tags:['adventure','family'],link:'#',desc:'Guided canopy tour near Merriton Landing.'},
+      {t:'Volcano lookout hike',tags:['adventure'],link:'#',desc:'Day trip to the active volcano viewpoint.'},
+      {t:'White‑sand beach day',tags:['relax','family'],link:'#',desc:'Swim and snorkel in Yellow Leaf Bay.'},
+      {t:'Local history museum',tags:['culture','family'],link:'#',desc:'Learn Taniti’s heritage and art.'},
+      {t:'Chartered fishing tour',tags:['adventure'],link:'#',desc:'Half‑day deep‑sea fishing with local captains.'},
+      {t:'Art galleries walk',tags:['culture','relax'],link:'#',desc:'Galleries and microbrewery near Merriton Landing.'}
+    ];
+    function buildCards(){
+      const wrap=document.getElementById('cards');
+      wrap.innerHTML='';
+      const active=[...document.querySelectorAll('[name=filter]:checked')].map(i=>i.value);
+      DATA.filter(d=>d.tags.some(t=>active.includes(t))).forEach(d=>{
+        const el=document.createElement('div');
+        el.className='card';
+        el.innerHTML=`<strong>${d.t}</strong><br/><span class="pill">${d.tags.join(', ')}</span><p>${d.desc}</p><a href="${d.link}">Book via partner</a>`;
+        wrap.appendChild(el);
+      });
+      wrap.dataset.ready='1';
+    }
+    document.querySelectorAll('[name=filter]').forEach(c=>c.addEventListener('change',buildCards));
+  </script>
+</body>
+</html>
