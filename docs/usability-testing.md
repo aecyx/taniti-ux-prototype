@@ -25,7 +25,7 @@ This document contains the test plan, participant notes templates, and a consoli
 - Pain points & severity:
 
 ## Qualitative Feedback — Consolidated Summary (Example from 3 testers)
-Note: Replace with your actual observations if you run new sessions. These examples are grounded in typical findings for this IA and content.
+Note: Replace with your actual observations if you run new sessions. These examples are grounded in typical findings for this IA.
 
 1) Navigation label “Plan Trip” not obvious for booking info (A,B)
 - Actionable: Yes. Severity: Medium.

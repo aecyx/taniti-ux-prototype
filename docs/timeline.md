@@ -40,4 +40,4 @@ Deliverables: `docs/usability-tasks.md`, `docs/submission-draft.md`, final proto
 ## Assumptions & Risks
 - Timebox respected; if testing slips, reduce scope, not quality.
 - Mobile usage prioritized; desktop adapted responsibly.
-- Hosting via GitHub Pages or Netlify for URL submission.
+- Hosting via GitHub Pages for URL submission.

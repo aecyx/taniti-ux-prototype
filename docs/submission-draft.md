@@ -1,42 +1,38 @@
 # D479 Task 1 — UX Design Artifacts for Taniti Tourism Website
 
-This draft maps to rubric parts A–H. Paste into a Word document (.docx) and format headings. Insert screenshots from `wireframe/` and the live prototype URL where noted.
-
 ## A. Project Timeline
-See `docs/timeline.md` (4‑week plan within the scenario month).
+Four‑week plan within the scenario month:
+- Week 1: Discover/Define (review survey and island docs, persona, IA/sitemap, low‑fi wireframes).
+- Week 2: Design/Validate (expand flows, prepare guerrilla test plan, test with 3+ users, synthesize feedback).
+- Week 3: Prototype/Iterate (mobile‑first interactive prototype reflecting wireframe, apply prioritized feedback, accessibility).
+- Week 4: Validation/Handoff (five objective tasks, APA sources, submission draft, final review).
 
 ## B. Persona Profile
-See `docs/persona.md` (based on Survey Results + About the Island).
+Primary persona (planner traveler): Age 32; USA; party size 2–4; stay 3–7 days; mobile‑first. Goals: discover attractions (beaches, rainforest, volcano, zip‑line), understand transport hours/options, find lodging and booking links, confirm practical info (currency, power, alcohol hours, drinking age, holidays, safety). Behaviors: skims; wants clear nav and prominent CTAs; prefers trustworthy info and provider links.
 
 ## C. Low‑Fidelity Wireframe
-- Open `wireframe/index.html` and capture mobile + desktop screenshots.
-- Include `assets/sitemap.svg` to demonstrate information architecture and flow.
-- Wireframe aligns to persona by prioritizing: Explore, Plan Trip CTA, Getting Around, FAQs.
+Mobile‑first layout with clear navigation (Explore, Stay, Dining, Getting Around, Plan Trip CTA), hero overview, attraction cards, Plan Your Trip section, and Practical Info/FAQ. The sitemap demonstrates flow from Home → Explore/Plan/Getting Around → child pages, aligned to persona priorities.
 
 ## D. Guerrilla Usability Testing
-1) Summary of qualitative feedback (actionable vs. not)
+Summary (actionable vs. not):
 - Promote “Plan Your Trip” CTA (Actionable)
 - Surface bus hours and options on Home and Transport (Actionable)
 - Add FAQs for alcohol hours and drinking age (Actionable)
 - Add “Top 5 Things To Do” (Actionable)
-- Polish branding/visual style (Partially actionable in prototype; full visual polish out of scope)
-- Direct on‑site booking (Not actionable in scope; link to providers instead)
+- Visual style (contrast/spacing) (Partially actionable; branding out of scope)
+- Direct on‑site booking (Not actionable; link to providers instead)
 
-2) Implementation plan
-- CTA elevated in header and hero; improved visual prominence
-- Transport quick facts on Home; detailed section in Getting Around
-- FAQs added under Plan → common questions (alcohol hours, drinking age, power, holidays, English, currency)
-- Curated Top 5 added on Home and Explore
-- Accessibility improvements: contrast and spacing adjustments
-
-See `docs/usability-testing.md` for full notes and plan.
+Implementation:
+- Elevate CTA in header and hero; improve prominence
+- Add transport quick facts on Home; full details in Getting Around
+- Add FAQs (alcohol hours, drinking age, power, holidays, English, currency)
+- Add curated Top 5 in Explore
+- Improve contrast and spacing for accessibility
 
 ## E. Interactive Prototype (URL)
-- File: `prototype/index.html` (mobile‑first single‑page prototype with hash‑based navigation and filterable Explore cards)
-- Hosting steps in `README.md`. Publish and paste URL here:
+Mobile‑first single‑page prototype with clear navigation, quick facts, FAQs, and curated attractions.
 
-Prototype URL: ________________________________
-Prototype URL: https://<username>.github.io/taniti-ux-prototype/prototype/index.html
+Prototype URL: https://aecyx.github.io/taniti-ux-prototype/prototype/index.html
 
 
 How it reflects feedback:
@@ -46,7 +42,11 @@ How it reflects feedback:
 - Top 5 attractions visible near the top.
 
 ## F. Five Objective Usability Tasks
-See `docs/usability-tasks.md`.
+1. Find bus service hours for Taniti City.
+2. Identify at least two adventure activities and how to book them.
+3. Confirm alcohol sales hours and the drinking age on Taniti.
+4. Locate government‑regulated lodging options and where to check availability.
+5. Verify currency and payment options accepted on the island.
 
 ## G. APA Citations
 - Western Governors University. (n.d.). About the island [Internal course material]. WGU.
